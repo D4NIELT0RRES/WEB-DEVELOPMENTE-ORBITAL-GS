@@ -31,4 +31,9 @@ indicadores.forEach(ind => {
   });
 });
 
+// Pausa o autoplay ao passar o mouse no slideshow
+const wrapper = document.querySelector('.slideshow-wrapper');
+wrapper.addEventListener('mouseenter', () => clearInterval(intervalo));
+wrapper.addEventListener('mouseleave', reiniciarIntervalo);
+
 reiniciarIntervalo();
