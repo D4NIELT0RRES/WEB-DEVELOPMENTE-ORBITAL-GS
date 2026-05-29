@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbital Watch — Rastreador de Detritos Espaciais Brasileiros</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="tema-espaco">
+
+  <!-- HEADER -->
+  <header id="topo">
+    <div class="header-container">
+      <a href="#hero" class="header-logo">ORBITAL WATCH</a>
+      <nav aria-label="Menu principal">
+        <ul class="nav-lista">
+          <li><a href="#problema">Problema</a></li>
+          <li><a href="#tecnologia">Tecnologia</a></li>
+          <li><a href="#objetivos">Objetivos</a></li>
+          <li><a href="#slideshow">Galeria</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <!-- Seletor de tema -->
+      <div class="tema-seletor" aria-label="Escolher tema de cor">
+        <button class="tema-btn tema-btn-espaco ativo" data-tema="tema-espaco" title="Tema Espaço (azul)" aria-label="Tema azul"></button>
+        <button class="tema-btn tema-btn-roxo" data-tema="tema-roxo" title="Tema Roxo" aria-label="Tema roxo"></button>
+        <button class="tema-btn tema-btn-verde" data-tema="tema-verde" title="Tema Verde" aria-label="Tema verde"></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="secao-container hero-conteudo">
+        <span class="hero-label">GLOBAL SOLUTION 2026 · FIAP · ODS 9</span>
+        <h1 class="hero-titulo">
+          27.000 detritos.<br>
+          26 satélites brasileiros.<br>
+          <span class="destaque-accent">Zero proteção dedicada.</span>
+        </h1>
+        <p class="hero-subtitulo">
+          Orbital Watch monitora detritos em órbita e calcula risco de colisão para CBERS-4A,
+          Amazonia-1 e SCD-2 — open source, em português, para quem protege o patrimônio
+          espacial brasileiro.
+        </p>
+        <div class="hero-botoes">
+          <a href="#problema" class="btn-primario">Conhecer o projeto</a>
+          <a href="#tecnologia" class="btn-secundario">Ver tecnologia</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section id="problema">
+      <div class="secao-container">
+        <span class="secao-label">01 · PROBLEMA</span>
+        <h2 class="secao-titulo">O Brasil não monitora seus próprios satélites</h2>
+        <p class="secao-texto">
+          Universidades, AEB e startups espaciais dependem de ferramentas americanas que custam
+          US$ 20.000+/ano por licença. O Orbital Watch preenche essa lacuna com dados públicos
+          do Celestrak e Space-Track, código auditável e interface em português.
+        </p>
+        <div class="cards-dados">
+          <div class="card-dado">
+            <span class="card-numero">~27.000</span>
+            <span class="card-descricao">detritos rastreados pela NORAD</span>
+          </div>
+          <div class="card-dado">
+            <span class="card-numero vermelho">500.000+</span>
+            <span class="card-descricao">fragmentos invisíveis ao radar</span>
+          </div>
+          <div class="card-dado">
+            <span class="card-numero">27.000 km/h</span>
+            <span class="card-descricao">velocidade orbital em LEO</span>
+          </div>
+          <div class="card-dado">
+            <span class="card-numero">US$ 250mi</span>
+            <span class="card-descricao">custo estimado do CBERS-4A</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIA -->
+    <section id="tecnologia" class="fundo-alternado">
+      <div class="secao-container">
+        <span class="secao-label">02 · TECNOLOGIA</span>
+        <h2 class="secao-titulo">Como funciona o Orbital Watch</h2>
+        <p class="secao-texto">
+          Usa o algoritmo SGP4 e dados públicos do Celestrak/Space-Track para calcular
+          risco de conjunção entre detritos e satélites brasileiros. Um console físico
+          com Arduino exibe os alertas em tempo real.
+        </p>
+        <div class="cards-tecnologia">
+          <div class="card-tec">
+            <img src="img/icone-satelite.svg" alt="Ícone representando o algoritmo SGP4" class="card-tec-icone">
+            <h3 class="card-tec-titulo">SGP4</h3>
+            <p class="card-tec-desc">Algoritmo padrão NORAD para propagação orbital. Calcula posição futura de qualquer objeto usando dados TLE do Space-Track.</p>
+          </div>
+          <div class="card-tec">
+            <img src="img/icone-satelite.svg" alt="Ícone representando fonte de dados Celestrak" class="card-tec-icone">
+            <h3 class="card-tec-titulo">Celestrak</h3>
+            <p class="card-tec-desc">Catálogo público e gratuito de TLEs mantido a partir dos dados do NORAD. Fonte de dados do Orbital Watch — sem custos de licença.</p>
+          </div>
+          <div class="card-tec">
+            <img src="img/icone-satelite.svg" alt="Ícone representando o Arduino" class="card-tec-icone">
+            <h3 class="card-tec-titulo">Arduino</h3>
+            <p class="card-tec-desc">Console físico de estação terrena com LEDs de semáforo, display OLED e buzzer. Exibe nível de risco BAIXO / MÉDIO / ALTO / CRÍTICO.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OBJETIVOS -->
+    <section id="objetivos">
+      <div class="secao-container">
+        <span class="secao-label">03 · OBJETIVOS</span>
+        <h2 class="secao-titulo">Proteger os satélites brasileiros</h2>
+        <p class="secao-texto">
+          Foco exclusivo nos ativos espaciais do Brasil, construindo soberania tecnológica
+          nacional sem depender de ferramentas estrangeiras.
+        </p>
+        <div class="cards-satelite">
+          <div class="card-sat">
+            <h3 class="card-sat-nome">CBERS-4A</h3>
+            <p class="card-sat-info">China-Brazil Earth Resources Satellite</p>
+            <ul class="card-sat-dados">
+              <li>Órbita polar · 628 km de altitude</li>
+              <li>Custo estimado: US$ 250 milhões</li>
+              <li>Usado pelo INPE para monitorar desmatamento</li>
+            </ul>
+          </div>
+          <div class="card-sat">
+            <h3 class="card-sat-nome">AMAZONIA-1</h3>
+            <p class="card-sat-info">Primeiro satélite 100% brasileiro</p>
+            <ul class="card-sat-dados">
+              <li>Órbita solar síncrona · 752 km de altitude</li>
+              <li>Lançado em 2021 pela AEB</li>
+              <li>Projetado e fabricado inteiramente no Brasil</li>
+            </ul>
+          </div>
+          <div class="card-sat">
+            <h3 class="card-sat-nome">SCD-2</h3>
+            <p class="card-sat-info">Satélite de Coleta de Dados 2</p>
+            <ul class="card-sat-dados">
+              <li>Órbita · 750 km de altitude</li>
+              <li>Operacional desde 1998</li>
+              <li>Coleta dados da Amazônia e do Pantanal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PÚBLICO-ALVO -->
+    <section id="publico" class="fundo-alternado">
+      <div class="secao-container">
+        <span class="secao-label">04 · PÚBLICO-ALVO</span>
+        <h2 class="secao-titulo">Para quem é o Orbital Watch</h2>
+        <p class="secao-texto">
+          Desenvolvido para quem trabalha com ativos espaciais brasileiros e precisa de uma
+          solução nacional acessível, auditável e em português.
+        </p>
+        <div class="chips-publico">
+          <div class="chip">
+            <span class="chip-emoji">🏛️</span>
+            <div>
+              <strong>AEB</strong>
+              <span>Analistas operacionais da Agência Espacial Brasileira</span>
+            </div>
+          </div>
+          <div class="chip">
+            <span class="chip-emoji">🔬</span>
+            <div>
+              <strong>INPE</strong>
+              <span>Operadores dos satélites CBERS e Amazonia-1</span>
+            </div>
+          </div>
+          <div class="chip">
+            <span class="chip-emoji">🎓</span>
+            <div>
+              <strong>Pesquisadores</strong>
+              <span>Universidades brasileiras com pesquisa em ciências espaciais</span>
+            </div>
+          </div>
+          <div class="chip">
+            <span class="chip-emoji">🏢</span>
+            <div>
+              <strong>Gestores Governamentais</strong>
+              <span>Tomadores de decisão sobre investimentos em infraestrutura espacial</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section id="beneficios">
+      <div class="secao-container">
+        <span class="secao-label">05 · BENEFÍCIOS</span>
+        <h2 class="secao-titulo">Por que o Orbital Watch?</h2>
+        <p class="secao-texto">
+          Alternativa nacional ao STK (US$ 20.000+/ano por licença) usando exclusivamente
+          dados e ferramentas públicas, com código aberto e auditável.
+        </p>
+        <div class="cards-beneficio">
+          <div class="card-ben">
+            <span class="card-ben-emoji">🔓</span>
+            <h3 class="card-ben-titulo">Open Source</h3>
+            <p class="card-ben-desc">Código público e auditável. Qualquer pesquisador pode inspecionar, modificar e contribuir.</p>
+          </div>
+          <div class="card-ben">
+            <span class="card-ben-emoji">🇧🇷</span>
+            <h3 class="card-ben-titulo">Em Português</h3>
+            <p class="card-ben-desc">Interface, documentação e alertas inteiramente em português. Pensado para o usuário brasileiro.</p>
+          </div>
+          <div class="card-ben">
+            <span class="card-ben-emoji">💰</span>
+            <h3 class="card-ben-titulo">Baixo Custo</h3>
+            <p class="card-ben-desc">Alimentado por dados públicos do Celestrak e Space-Track. Sem licenças, sem custos por seat.</p>
+          </div>
+          <div class="card-ben">
+            <span class="card-ben-emoji">🛡️</span>
+            <h3 class="card-ben-titulo">Soberania Espacial</h3>
+            <p class="card-ben-desc">Tecnologia nacional para proteger ativos nacionais. Independência de ferramentas americanas caras.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APLICAÇÃO -->
+    <section id="aplicacao" class="fundo-alternado">
+      <div class="secao-container">
+        <span class="secao-label">06 · APLICAÇÃO NO DIA A DIA</span>
+        <h2 class="secao-titulo">Como é usado na prática</h2>
+        <p class="secao-texto">
+          Três cenários reais de uso do Orbital Watch por diferentes perfis de usuário.
+        </p>
+        <div class="cenarios">
+          <div class="cenario">
+            <h3 class="cenario-titulo">Operador da AEB</h3>
+            <p class="cenario-desc">
+              Acessa o dashboard pela manhã e verifica a lista de alertas de conjunção.
+              Filtra por satélite, prioriza os eventos com risco ALTO ou CRÍTICO e aciona
+              o protocolo de avaliação quando a distância mínima for menor que 1 km.
+            </p>
+          </div>
+          <div class="cenario">
+            <h3 class="cenario-titulo">Gestor Governamental</h3>
+            <p class="cenario-desc">
+              Recebe relatório mensal de risco por satélite gerado automaticamente.
+              Usa os dados para embasar decisões de investimento em proteção orbital
+              e apresentar o status da infraestrutura espacial brasileira para stakeholders.
+            </p>
+          </div>
+          <div class="cenario">
+            <h3 class="cenario-titulo">Pesquisador Universitário</h3>
+            <p class="cenario-desc">
+              Exporta o histórico completo de eventos de conjunção em formato CSV.
+              Usa os dados para análise estatística, publicações acadêmicas e desenvolvimento
+              de novos modelos de predição de colisão orbital.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDESHOW -->
+    <section id="slideshow">
+      <div class="secao-container">
+        <span class="secao-label">07 · GALERIA</span>
+        <h2 class="secao-titulo">Visualizando o problema orbital</h2>
+        <p class="secao-texto">
+          Representações visuais do cenário de detritos em órbita e do monitoramento
+          realizado pelo Orbital Watch para proteger os satélites brasileiros.
+        </p>
+        <div class="slideshow-wrapper">
+          <div class="slides" id="slides">
+            <div class="slide">
+              <img src="img/slide1.svg" alt="Satélite brasileiro em órbita com detritos espaciais ao redor da Terra">
+              <div class="slide-legenda">
+                <h3>Satélite em órbita com detritos</h3>
+                <p>CBERS-4A a 628 km de altitude monitorado pelo Orbital Watch em tempo real</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="img/slide2.svg" alt="Campo de detritos espaciais rastreados em múltiplas órbitas">
+              <div class="slide-legenda">
+                <h3>Campo de detritos em múltiplas órbitas</h3>
+                <p>Mais de 27.000 objetos rastreados pela NORAD em diferentes altitudes orbitais</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="img/slide3.svg" alt="Painel de monitoramento do Orbital Watch com status dos satélites">
+              <div class="slide-legenda">
+                <h3>Painel de monitoramento em tempo real</h3>
+                <p>Dashboard do Orbital Watch exibindo status e alertas de conjunção para os 3 satélites brasileiros</p>
+              </div>
+            </div>
+          </div>
+          <button class="slide-btn slide-btn-prev" id="slide-prev" aria-label="Slide anterior">&#8249;</button>
+          <button class="slide-btn slide-btn-next" id="slide-next" aria-label="Próximo slide">&#8250;</button>
+        </div>
+        <div class="slide-indicadores" id="slide-indicadores">
+          <button class="indicador ativo" data-index="0" aria-label="Ir para slide 1"></button>
+          <button class="indicador" data-index="1" aria-label="Ir para slide 2"></button>
+          <button class="indicador" data-index="2" aria-label="Ir para slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO DE CONTATO -->
+    <section id="contato" class="fundo-alternado">
+      <div class="secao-container">
+        <span class="secao-label">08 · CONTATO</span>
+        <h2 class="secao-titulo">Entre em contato com a equipe</h2>
+        <p class="secao-texto">
+          Interessado em colaborar com o Orbital Watch, tirar dúvidas ou acompanhar o projeto?
+          Preencha o formulário abaixo.
+        </p>
+        <form class="form-contato" id="form-contato" novalidate>
+          <div class="form-grupo">
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+            <span class="form-erro-msg" id="erro-nome">Por favor, informe seu nome.</span>
+          </div>
+          <div class="form-grupo">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com">
+            <span class="form-erro-msg" id="erro-email">Por favor, informe um e-mail válido.</span>
+          </div>
+          <div class="form-grupo">
+            <label for="instituicao">Instituição</label>
+            <input type="text" id="instituicao" name="instituicao" placeholder="AEB, INPE, Universidade...">
+          </div>
+          <div class="form-grupo">
+            <label for="assunto">Assunto *</label>
+            <select id="assunto" name="assunto">
+              <option value="">Selecione um assunto</option>
+              <option value="colaboracao">Colaboração no projeto</option>
+              <option value="duvida">Dúvida técnica</option>
+              <option value="parceria">Parceria institucional</option>
+              <option value="imprensa">Imprensa / Divulgação</option>
+              <option value="outro">Outro</option>
+            </select>
+            <span class="form-erro-msg" id="erro-assunto">Por favor, selecione um assunto.</span>
+          </div>
+          <div class="form-grupo">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Descreva sua mensagem..."></textarea>
+            <span class="form-erro-msg" id="erro-mensagem">Por favor, escreva sua mensagem.</span>
+          </div>
+          <button type="submit" class="btn-primario">Enviar mensagem</button>
+          <div class="form-sucesso" id="form-sucesso">
+            Mensagem enviada com sucesso! Entraremos em contato em breve.
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz">
+      <div class="secao-container">
+        <span class="secao-label">09 · QUIZ</span>
+        <h2 class="secao-titulo">Teste seus conhecimentos sobre detritos espaciais</h2>
+        <p class="secao-texto">
+          10 perguntas sobre detritos orbitais, satélites brasileiros e o Orbital Watch.
+          Veja quanto você sabe sobre o problema que afeta o patrimônio espacial do Brasil.
+        </p>
+        <div class="quiz-container" id="quiz-container">
+          <!-- Barra de progresso -->
+          <div class="quiz-progresso">
+            <span class="quiz-progresso-texto" id="quiz-progresso-texto">Pergunta 1 de 10</span>
+            <div class="quiz-barra-wrapper">
+              <div class="quiz-barra" id="quiz-barra"></div>
+            </div>
+            <span class="quiz-progresso-texto" id="quiz-pontos-texto">0 acertos</span>
+          </div>
+          <!-- Bloco da pergunta -->
+          <div class="quiz-pergunta-bloco" id="quiz-pergunta-bloco">
+            <span class="quiz-numero" id="quiz-numero">PERGUNTA 1</span>
+            <p class="quiz-pergunta-texto" id="quiz-pergunta-texto"></p>
+            <div class="quiz-opcoes" id="quiz-opcoes"></div>
+            <div class="quiz-feedback" id="quiz-feedback"></div>
+          </div>
+          <!-- Botão próxima pergunta -->
+          <div class="quiz-nav">
+            <button class="btn-primario" id="quiz-proximo" style="display:none;">Próxima pergunta</button>
+          </div>
+          <!-- Resultado final -->
+          <div class="quiz-resultado" id="quiz-resultado">
+            <div class="resultado-emblema" id="resultado-emblema"></div>
+            <div class="resultado-pontuacao" id="resultado-pontuacao"></div>
+            <div class="resultado-total">de 10 perguntas</div>
+            <div class="resultado-mensagem" id="resultado-mensagem"></div>
+            <div class="resultado-detalhe" id="resultado-detalhe"></div>
+            <button class="btn-primario" id="quiz-reiniciar">Tentar novamente</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer id="rodape">
+    <div class="rodape-container">
+      <span class="rodape-logo">ORBITAL WATCH</span>
+      <p class="rodape-info">
+        Daniel · Lira · Pedro T. · PP — Global Solution 2026 · FIAP · Engenharia de Software · ODS 9
+      </p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/tema.js"></script>
+  <script src="js/slideshow.js"></script>
+  <script src="js/formulario.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
