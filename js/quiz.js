@@ -198,7 +198,7 @@ elReiniciar.addEventListener('click', () => {
   elBlocoQuestao.style.display = '';
   elPontos.textContent = '0 acertos';
   carregarPergunta();
-}
+});
 
 // Acessibilidade: navegar com Enter ou Space nas opções de quiz via teclado
 elOpcoes.addEventListener('keydown', (e) => {
@@ -206,6 +206,6 @@ elOpcoes.addEventListener('keydown', (e) => {
     e.preventDefault();
     e.target.click();
   }
-}););
+});
 
 carregarPergunta();
