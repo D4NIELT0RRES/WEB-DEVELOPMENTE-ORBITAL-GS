@@ -1,0 +1,16 @@
+{
+  "name": "orbital-watch",
+  "version": "1.0.0",
+  "description": "Rastreador de Detritos Espaciais Brasileiros — Global Solution 2026 FIAP",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": ["space", "satellites", "debris", "orbital"],
+  "author": "Daniel, Lira, Pedro T., PP",
+  "license": "MIT"
+}
