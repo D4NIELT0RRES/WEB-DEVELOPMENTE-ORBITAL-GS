@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420">
+  <defs>
+    <radialGradient id="bg2" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#05010f"/>
+    </radialGradient>
+    <radialGradient id="center-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="420" fill="url(#bg2)"/>
+  <!-- Estrelas de fundo -->
+  <circle cx="80" cy="50" r="1" fill="white" opacity="0.7"/>
+  <circle cx="200" cy="110" r="0.8" fill="white" opacity="0.5"/>
+  <circle cx="400" cy="30" r="1.2" fill="white" opacity="0.9"/>
+  <circle cx="700" cy="80" r="0.9" fill="white" opacity="0.6"/>
+  <circle cx="1000" cy="40" r="1.1" fill="white" opacity="0.8"/>
+  <circle cx="1150" cy="150" r="0.7" fill="white" opacity="0.6"/>
+  <circle cx="550" cy="380" r="1" fill="white" opacity="0.5"/>
+  <circle cx="900" cy="350" r="0.8" fill="white" opacity="0.7"/>
+  <circle cx="150" cy="350" r="1.2" fill="white" opacity="0.6"/>
+  <!-- Campo de detritos - círculos orbitais -->
+  <ellipse cx="600" cy="210" rx="480" ry="140" fill="none" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="4 6" opacity="0.3"/>
+  <ellipse cx="600" cy="210" rx="360" ry="105" fill="none" stroke="#6d28d9" stroke-width="1" stroke-dasharray="4 6" opacity="0.3"/>
+  <ellipse cx="600" cy="210" rx="240" ry="70" fill="none" stroke="#7c3aed" stroke-width="1" stroke-dasharray="4 6" opacity="0.4"/>
+  <!-- Glow central -->
+  <ellipse cx="600" cy="210" rx="100" ry="60" fill="url(#center-glow)"/>
+  <!-- Terra no centro -->
+  <circle cx="600" cy="210" r="55" fill="#1a4fa0"/>
+  <ellipse cx="585" cy="190" rx="18" ry="12" fill="#2d7a3a" opacity="0.8"/>
+  <circle cx="600" cy="210" r="58" fill="none" stroke="#4a9eff" stroke-width="2" opacity="0.4"/>
+  <!-- Detritos em órbita - vários tamanhos e tons -->
+  <!-- Órbita 1 (interna) -->
+  <circle cx="750" cy="210" r="4" fill="#dc2626" opacity="0.95"/>
+  <circle cx="600" cy="145" r="3" fill="#f97316" opacity="0.9"/>
+  <circle cx="450" cy="210" r="3.5" fill="#dc2626" opacity="0.85"/>
+  <circle cx="600" cy="275" r="2.5" fill="#ef4444" opacity="0.9"/>
+  <!-- Órbita 2 (média) -->
+  <circle cx="870" cy="180" r="5" fill="#dc2626" opacity="0.8"/>
+  <circle cx="780" cy="105" r="3" fill="#f97316" opacity="0.75"/>
+  <circle cx="420" cy="120" r="4" fill="#dc2626" opacity="0.85"/>
+  <circle cx="330" cy="230" r="3.5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="600" cy="315" r="4" fill="#dc2626" opacity="0.7"/>
+  <circle cx="820" cy="295" r="3" fill="#f97316" opacity="0.75"/>
+  <!-- Órbita 3 (externa) -->
+  <circle cx="1050" cy="210" r="6" fill="#dc2626" opacity="0.65"/>
+  <circle cx="950" cy="80" r="4" fill="#f97316" opacity="0.7"/>
+  <circle cx="600" cy="70" r="5" fill="#dc2626" opacity="0.6"/>
+  <circle cx="250" cy="100" r="3.5" fill="#ef4444" opacity="0.65"/>
+  <circle cx="140" cy="240" r="4.5" fill="#dc2626" opacity="0.6"/>
+  <circle cx="250" cy="350" r="3" fill="#f97316" opacity="0.65"/>
+  <circle cx="600" cy="360" r="5" fill="#dc2626" opacity="0.6"/>
+  <circle cx="970" cy="340" r="4" fill="#ef4444" opacity="0.65"/>
+  <!-- Rastros dos detritos maiores -->
+  <line x1="1044" y1="207" x2="1024" y2="203" stroke="#dc2626" stroke-width="1.5" opacity="0.4"/>
+  <line x1="944" y1="77" x2="928" y2="71" stroke="#f97316" stroke-width="1.5" opacity="0.4"/>
+  <!-- Satélite Amazonia-1 -->
+  <g transform="translate(830, 60) rotate(-25)">
+    <rect x="-15" y="-6" width="30" height="12" fill="#d4d8e0" rx="2"/>
+    <rect x="-38" y="-2.5" width="23" height="5" fill="#8b5cf6" opacity="0.9"/>
+    <rect x="15" y="-2.5" width="23" height="5" fill="#8b5cf6" opacity="0.9"/>
+    <rect x="-2.5" y="-14" width="5" height="8" fill="#999"/>
+    <circle cx="0" cy="0" r="2.5" fill="white" opacity="0.9"/>
+  </g>
+  <!-- Legenda contagem -->
+  <rect x="30" y="30" width="200" height="60" rx="8" fill="#2d1b4e" opacity="0.85"/>
+  <text x="50" y="55" font-family="monospace" font-size="11" fill="#a78bfa">DETRITOS RASTREADOS</text>
+  <text x="50" y="78" font-family="monospace" font-size="22" font-weight="bold" fill="#8b5cf6">27.000+</text>
+</svg>
