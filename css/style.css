@@ -517,6 +517,11 @@ footer {
   color: var(--cor-texto-mute);
 }
 
+/* ── SCROLL SUAVE ── */
+html {
+  scroll-behavior: smooth;
+}
+
 /* ── SELETOR DE TEMA ── */
 .tema-seletor {
   display: flex;
