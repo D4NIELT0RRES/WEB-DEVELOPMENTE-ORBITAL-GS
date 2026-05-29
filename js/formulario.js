@@ -66,5 +66,7 @@ form.addEventListener('submit', (e) => {
   form.reset();
   Object.keys(campos).forEach(nome => limparErro(campos[nome]));
 
+  sucesso.setAttribute('role', 'alert');
+  sucesso.focus();
   setTimeout(() => sucesso.classList.remove('visivel'), 5000);
 });
